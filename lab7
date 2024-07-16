@@ -1,1 +1,17 @@
-
+import numpy as np
+# thư viện này để hiển thị các tấm ảnh
+import matplotlib.pyplot as plt
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import load_img
+# để chọn ngẫu nhiên các tấm ảnh
+import random
+import os
+# để load dữ liệu trong tập mẫu
+from keras.datasets import mnist
+from keras.models import load_model
+from matplotlib import image
+# các hàm sau để xây dựng mô hình mạng neural
+# thêm 1 lớp, thêm hàm kích hoạt activation
+from keras.models import Sequential
+from tensorflow.keras.utils import to_categorical
+from keras.layers import Dense,Activation
